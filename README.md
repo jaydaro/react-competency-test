@@ -22,6 +22,7 @@ __Please follow the instructions__
    2.  Create a Friends List using the friends endpoint above. Use whatever tools or libraries, that you feel are necessary to complete the job.
    3.  When you click on a friend in the Friends List, show a Friends Detail view.
    4.  Have a button or other way to return to the Friends List
+   5.  Use the [example image](./example.png) as a guide.
 5.  Commit and push your code to your new repository in a feature branch.(this should be on your github).
 6.  Feel free to commit as often as you like, but please have all commits on the branch you push up so we can see your process.
 7.  Send us a pull request, we will review your code and get back to you.

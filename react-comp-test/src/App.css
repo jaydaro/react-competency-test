@@ -1,0 +1,14 @@
+.body {
+  max-width: 700px;
+  margin: 0, auto;
+  text-align: center;
+}
+
+.person-box {
+  padding: 1em;
+  margin: 1em;
+}
+
+button {
+  max-height: 3em;
+}

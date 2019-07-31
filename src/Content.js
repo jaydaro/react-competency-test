@@ -34,11 +34,16 @@ class Content extends Component {
         })
     }
 
-    showDetails = () => {
+    showDetails = (id) => {
         this.getDetails();
         this.setState(prevState => {
             return {detailViewer: !prevState.detailViewer}
         })
+        if (document.getElementById(id).innerHTML === 'Select'){
+            document.getElementById(id).innerHTML = 'Exit'
+        } else if(document.getElementById(id).innerHTML === 'Exit'){
+            document.getElementById(id).innerHTML = 'Select'
+        }
     }
 
     render() { 

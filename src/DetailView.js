@@ -5,9 +5,9 @@ import './Styles/DetailView.css';
 class DetailView extends Component {
     render() { 
         let {first_name, last_name, img, phone, address, city, state, zipcode, bio, photos, statuses, available} = this.props.details;
-        let containerClass = (this.props.detailViewer ? 'detailView' : 'hidden');
+        let containerID = (this.props.detailViewer ? 'detailView' : 'hidden');
         return (
-            <div id={containerClass}>
+            <div id={containerID}>
                 <header>
                     <img src={img} alt=""/>
                     <div id='info'>
@@ -18,9 +18,9 @@ class DetailView extends Component {
                         <div>{city}, {state} {zipcode}</div>
                     </div>
                 </header>
-                <div>{bio}</div>
-                <div>{photos}</div>
-                <div>{statuses}</div>
+                <div id='bio'>{bio}</div>
+                <div id='photos'>{photos}</div>
+                <div id='statuses'>{statuses}</div>
             </div>
         );
     }

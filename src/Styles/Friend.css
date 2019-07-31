@@ -1,0 +1,35 @@
+.friend{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    border-bottom: 3px solid;
+    grid-column: 2/3;
+    padding-bottom: 40px;
+}
+
+.overviewImg{
+    width: 70px;
+    height: 70px;
+}
+
+.nameAndStatus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fullName{
+    font-size: 25px;
+}
+
+.showDetsButton{
+    height: 50px;
+    width: 100px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: darkgray;
+    align-self: center;
+}
+
+.showDetsButton:hover{
+    cursor: pointer;
+}

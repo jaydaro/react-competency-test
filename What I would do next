@@ -1,0 +1,7 @@
+If I had more time to invest in this application, these are the things I would do:
+
+1) Add a details document for each friend in the details API 
+2) Create ways to add, edit, and delete friends, as well as add, edit, and delete specific parts of their details
+3) Determine why the photos and status array from the details API are not mappable and for some reason are undefined if I try to retrieve their length. 
+4) Change the pop-up showing the details to appear directly above or below the friend that I selected
+5) Add an 'X' button to the pop-up for exiting back to the friends list

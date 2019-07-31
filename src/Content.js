@@ -7,7 +7,8 @@ class Content extends Component {
         super(props);
         this.state = {
             friends: [],
-            details: []
+            details: [],
+            detailViewer: false
         }
     }
 
@@ -23,11 +24,27 @@ class Content extends Component {
         })
     }
 
+    getDetails = () => {
+        axios.get('http://private-5bdb3-friendmock.apiary-mock.com/friends/id').then(response => {
+            this.setState({
+                details: response.data
+            })
+        })
+    }
+
+    showDetails = () => {
+        this.getDetails();
+        this.setState(prevState => {
+            return {detailViewer: !prevState.detailViewer}
+        })
+    }
+
     render() { 
         let friends = this.state.friends;
         return (
             <div className='freindsContainer'>
-                {friends.map(friend => <Friend friend ={friend} />)}
+                {friends.map(friend => <Friend friend ={friend} showDetails={this.showDetails} />)}
+                <DetailView details={this.state.details} detailViewer={this.state.detailViewer} />
             </div>
         );
     }

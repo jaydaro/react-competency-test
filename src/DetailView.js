@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
+import './Styles/DetailView.css';
+
 
 class DetailView extends Component {
     render() { 

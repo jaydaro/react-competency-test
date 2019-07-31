@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Friend from './Friend';
+import DetailView from './DetailView';
+import './Styles/Content.css';
 
 class Content extends Component {
     constructor(props) {
@@ -42,7 +44,7 @@ class Content extends Component {
     render() { 
         let friends = this.state.friends;
         return (
-            <div className='freindsContainer'>
+            <div id='friendsContainer'>
                 {friends.map(friend => <Friend friend ={friend} showDetails={this.showDetails} />)}
                 <DetailView details={this.state.details} detailViewer={this.state.detailViewer} />
             </div>

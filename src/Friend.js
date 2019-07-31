@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './Styles/Friend.css';
+
 
 class Friends extends Component {
     render() { 

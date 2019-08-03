@@ -6,7 +6,7 @@ export const FriendDetails = ({ friendId }) => {
   useEffect(() => {
     async function fetchList() {
       const result = await axios.get(
-        "http://private-5bdb3-friendmock.apiary-mock.com/friends/id"
+        "http://private-5bdb3-friendmock.apiary-mock.com/friends/id" /* Hard coding id here since individual ids are not working - friendId */
       );
       setDetail(result.data);
     }
@@ -14,7 +14,6 @@ export const FriendDetails = ({ friendId }) => {
   }, [friendId]);
   return (
     <div>
-      {detail.id}
       <img src={detail.img} alt={detail.first_name} />
       <div>
         {detail.first_name} {detail.last_name}
@@ -26,15 +25,18 @@ export const FriendDetails = ({ friendId }) => {
       <div>{detail.zipcode}</div>
       <div>{detail.bio}</div>
       <div>
-        {detail.photos.map(photo => (
-          <img src={photo} alt="Image_Not_Found" />
-        ))}
+        {/* {detail.photos.array.forEach(photo => {
+          <img src={photo} alt="" />;
+        })} */}
+        {/* { detail.photos.forEach((photo)=>
+          (<img src={photo} alt="" />)
+        ) } */}
       </div>
-      <div>
+      {/* <div>
         {detail.statuses.map(status => (
           <div>{status}</div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

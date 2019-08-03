@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import ListFriends from "./components/friends/ListFriends";
+import { BrowserRouter } from "react-router-dom";
+import Main from "./components/main/MainComponent";
 
 function App() {
   return (
@@ -20,7 +21,10 @@ function App() {
           Learn React
         </a>
       </header>
-      <ListFriends />
+      <BrowserRouter>
+        {" "}
+        <Main />
+      </BrowserRouter>
     </div>
   );
 }

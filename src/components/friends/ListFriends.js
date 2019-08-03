@@ -18,7 +18,7 @@ export const ListFriends = () => {
         <div key={friend.id}>
           <img src={friend.img} alt={friend.first_name} />
           <div>
-            <a href={"/+"}>
+            <a href={"/" + friend.id}>
               {" "}
               {friend.first_name} {friend.last_name}
             </a>

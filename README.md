@@ -1,3 +1,28 @@
+## Welcome to Friends Portal
+
+1. yarn - to install all dependencies (node-modules)
+2. yarn start - to start the project
+
+## Completed in 2 hrs
+
+1. Page to list all friends with little styling using styled components
+2. Page to display friends with little styling using styled components
+
+## Yet to complete
+
+1. More styling
+2. Displaying array statuses and array photos in details page - I gave lower priority to this because I'm not sure what to do with them
+3. Did flex box row and used basic App.css styling for background. More can be done.
+4. I assume the details endpoint is incomplete. Some change needs to done over there.
+5. Unit testing
+6. Exception handling
+
+## Achieved
+
+1. Modularization
+2. Effective usage of React Hooks
+3. Used styled components for custom styling and responsiveness.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

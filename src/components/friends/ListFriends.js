@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { FRIENDS_BASE_URL } from "../../common/apiConstants";
 
 export const ListFriends = () => {
   const [friends, setFriends] = useState([]);
   useEffect(() => {
     async function fetchList() {
-      const result = await axios.get(
-        "http://private-5bdb3-friendmock.apiary-mock.com/friends"
-      );
+      const result = await axios.get(FRIENDS_BASE_URL);
       setFriends(result.data);
     }
     fetchList();

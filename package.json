@@ -2,6 +2,7 @@
   "name": "react-competency-test",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://private-5bdb3-friendmock.apiary-mock.com",
   "dependencies": {
     "axios": "^0.19.0",
     "react": "^16.8.6",

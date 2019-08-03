@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { FRIENDS_BASE_URL } from "../../common/apiConstants";
 
 export const FriendDetails = ({ friendId }) => {
   const [detail, setDetail] = useState([]);
   useEffect(() => {
     async function fetchList() {
       const result = await axios.get(
-        "http://private-5bdb3-friendmock.apiary-mock.com/friends/id" /* Hard coding id here since individual ids are not working - friendId */
+        FRIENDS_BASE_URL +
+          "/id" /* Hard coding id here since individual ids are not working - friendId */
       );
       setDetail(result.data);
     }

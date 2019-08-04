@@ -4,7 +4,6 @@ import { shape } from 'prop-types';
 export default function Friend(person) {
     return (
         <div className="person-tile">
-        {console.log('person', person)}
             <img className="person-image" src={person.img}/>
             <div className="person-text">
                 <div className="person-details">

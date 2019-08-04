@@ -25,7 +25,6 @@ export default class FriendsList extends React.Component {
         const data = this.state.friendsList;
         if (!data[0]) return;
         return data.map(person => {
-            console.log(person.first_name);
             return (
                 <Friend
                     {...person}

@@ -1,0 +1,39 @@
+@blue-color: #416dea;
+@white-color: #ffffff;
+
+.person-list {
+    display: flex;
+    flex-direction: column;
+
+    .person-tile {
+        border-bottom: 1px solid gray;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+
+    .person-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .person-details {
+        padding: 10px 90px 10px 30px;
+    }
+
+    button {
+        color: @white-color;
+        background-color: @blue-color;
+        border: none;
+        border-radius: 3px;
+        display: inherit;
+        height: 40px;
+        justify-content: center;
+        padding: 10px 20px;
+        width: 160px;
+    }
+}
